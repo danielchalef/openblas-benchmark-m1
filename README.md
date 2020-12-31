@@ -18,7 +18,7 @@ Each test consisted of 10 runs with the first run being discarded. `OPENBLAS_LOO
 Raw data is in the _dgemm_ folder.
 
 ### OpenBLAS (with VORTEX/ ARMV8 kernel) vs Veclib
-vecLib significantly outperforms OpenBLAS, likely as it is using the M1's hardware-based matrix multiplication acceleration.
+vecLib significantly outperforms OpenBLAS, likely as it is using the M1's hardware-based matrix multiplication acceleration. vecLib's relatively low variance/IQR makes some datapoints a little difficult to see.
 
 ![dgemm vecLib vs OpenBLAS ARMv8 kernel](dgemm/dgemm_vortex_vs_veclib.svg)
 
