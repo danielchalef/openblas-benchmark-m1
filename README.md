@@ -13,7 +13,9 @@ Comparing the performance of `dgemm` provided by:
 - OpenBLAS's VORTEX/ARMv8 kernel (the default on the M1)
 - and OpenBLAS's NEOVERSEN1 and THUNDERX3T110 kernels.
 
-Each test consisted of 10 runs with the first run being discarded. `OPENBLAS_LOOPS` was set to 20 in order to avoid an underflow condition (see (https://github.com/xianyi/OpenBLAS/issues/2814#issuecomment-752682281)[discussion]). Raw data is in the _dgemm_ folder.
+Each test consisted of 10 runs with the first run being discarded. `OPENBLAS_LOOPS` was set to 20 in order to avoid an underflow condition (see ![discussion](https://github.com/xianyi/OpenBLAS/issues/2814#issuecomment-752682281) ). 
+
+Raw data is in the _dgemm_ folder.
 
 ### OpenBLAS (with VORTEX/ ARMV8 kernel) vs Veclib
 vecLib significantly outperforms OpenBLAS, likely as it is using the M1's hardware-based matrix multiplication acceleration.
