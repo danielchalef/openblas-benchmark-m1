@@ -37,7 +37,7 @@ All tests run on the M1. Only the kernels have been changed. A little difficult 
 Displaying median and shaded IQR.
 ![dgemm OpenBLAS kernel comparison](dgemm/dgemm_openblas_kernel_comparison.svg)
 
-![dgemm OpenBLAS kernel comparison 2](dgemm/dgemm_openblas_kernel_detail.svg)
+![dgemm OpenBLAS kernel comparison 2](dgemm/dgemm_openblas_kernel_detail.1.svg)
 
 The NEOVERSEN1 kernel appears to offer better results for the M1 than the default ARMV8 kernel.
 
