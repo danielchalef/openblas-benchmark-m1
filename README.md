@@ -31,6 +31,9 @@ All tests run on the M1. Only the kernels have been changed. A little difficult 
 
 The NEOVERSEN1 kernel appears to offer better results for the M1 than the default ARMV8 kernel.
 
+### Other tests
+The results.* folders contain various test runs for the full benchmark suite. They suffered from an underflow issue and should be disregarded. See above regarding underflows.
+
 
 
 
