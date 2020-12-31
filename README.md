@@ -1,7 +1,7 @@
 Update 12/31/2020: Added MKL and OpenBLAS ZEN kernel results run on an AMD Ryzen 9 3900XT. Reran tests with 100 iterations.
 
 # Benchmarking OpenBLAS on an Apple MacBook M1
-## vecLib is extraordinarily fast. OpenBLAS on the M1 holds its own versus the desktop Ryzen 9.
+### vecLib is extraordinarily fast. OpenBLAS on the M1 holds its own versus the desktop Ryzen 9.
 All vecLib and VORTEX tests were run on an Apple MacBook Pro 13 M1 w/ 16GB RAM. MKL and ZEN results run on an AMD Ryzen 9 3900XT desktop-class CPU.
 
 In order to compile the official OpenBLAS benchmarks using Xcode / clang version 12.0.0, you will need to have native homebrew for the M1 and install gfortran. Modify the Makefile as follows, where `-L` points to your homebrew `lib` path:
