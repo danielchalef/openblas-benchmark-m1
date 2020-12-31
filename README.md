@@ -23,7 +23,7 @@ In order to force the Intel MKL to use AVX intrinsics on the Ryzen, `MKL_DEBUG_C
 Raw data is in the _dgemm_ folder.
 
 ### OpenBLAS (with VORTEX/ ARMV8 kernel) vs Veclib vs MKL vs OpenBLAS (ZEN kernel)
-#### vecLib is extraordinarily fast. The OpenBLAS on the M1 holds its own versus the desktop Ryzen 9.
+#### vecLib is extraordinarily fast. OpenBLAS on the M1 holds its own versus the desktop Ryzen 9.
 With large matrices, MKL on the Ryzen significantly outperforms vecLib on the M1. However, vecLib bests the MKL on smaller matrices, often by a wide margin. Very impressive given that the M1 is a low-power mobile part. 
 
 vecLib significantly outperforms OpenBLAS, likely as it is using the M1's hardware-based matrix multiplication acceleration. It's very interesting to see how close the OpenBLAS ZEN kernel on the Ryzen is to the M1's OpenBLAS VORTEX results.  
