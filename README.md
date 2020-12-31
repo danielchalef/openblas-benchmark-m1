@@ -18,9 +18,14 @@ Each test consisted of 10 runs with the first run being discarded. `OPENBLAS_LOO
 ### OpenBLAS (with VORTEX/ ARMV8 kernel) vs Veclib
 vecLib significantly outperforms OpenBLAS, likely as it is using the M1's hardware-based matrix multiplication acceleration.
 
+![dgemm vecLib vs OpenBLAS ARMv8 kernel](dgemm/dgemm_vortex_vs_veclib.svg)
+
 ### OpenBLAS VORTEX/ ARMV8 vs NEOVERSEN1 vs THUNDERX3T110 kernels
 All tests run on the M1. Only the kernels have been changed. A little difficult to differences see given the similarity in results and scale. See charts below for some interesting matrix dimension test results.
 
+![dgemm OpenBLAS kernel comparison](dgemm/dgemm_openblas_kernel_comparison.svg)
+
+![dgemm OpenBLAS kernel comparison 2](dgemm/dgemm_openblas_kernel_detail.svg)
 
 The NEOVERSEN1 kernel appears to offer better results for the M1 than the default ARMV8 kernel.
 
